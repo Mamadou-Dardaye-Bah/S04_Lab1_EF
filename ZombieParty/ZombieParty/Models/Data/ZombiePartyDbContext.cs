@@ -8,5 +8,7 @@ public class ZombiePartyDbContext : DbContext
     {
 
     }
+    public DbSet<Zombie> zombies { get; set; }
+    public DbSet<ZombieType> zombieTypes { get; set; }
 
 }
