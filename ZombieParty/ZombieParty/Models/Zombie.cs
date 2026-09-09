@@ -15,7 +15,7 @@ namespace ZombieParty.Models
         [ForeignKey("ZombieType")]
         [StringLength(20, MinimumLength = 5)]
         public int ZombieTypeId { get; set; }
-        public ZombieType ZombieType { get; set; }
+        public ZombieType? ZombieType { get; set; }
         [Range(1, 20)]
         public int Point { get; set; }
         [StringLength(255)]
